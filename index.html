@@ -24,11 +24,11 @@
         }
 
         // 根据不同的终端，跳转到不同的地址
-        var theUrl = 'https://pan.baidu.com/s/1Wx-qw_tskFI7ZeKzcdu0lg';
+        var theUrl = '';
         if (Terminal.platform.android) {//安卓端
             //document.write('“简听”安卓版APP开发中，敬请期待！');
             theUrl = 'https://pan.baidu.com/s/1Wx-qw_tskFI7ZeKzcdu0lg';
-            location.href = theUrl;
+            // location.href = theUrl;
         } else {
             if (Terminal.platform.iPhone) {//iPhone端
                 document.write('“变态矿工”苹果版APP完善中，敬请期待！');
