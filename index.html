@@ -24,7 +24,7 @@
         }
 
         // 根据不同的终端，跳转到不同的地址
-        var theUrl = '';
+        var theUrl = 'https://pan.baidu.com/s/1Wx-qw_tskFI7ZeKzcdu0lg';
         if (Terminal.platform.android) {//安卓端
             //document.write('“简听”安卓版APP开发中，敬请期待！');
             theUrl = 'https://pan.baidu.com/s/1Wx-qw_tskFI7ZeKzcdu0lg';
@@ -32,7 +32,7 @@
         } else {
             if (Terminal.platform.iPhone) {//iPhone端
                 document.write('“变态矿工”苹果版APP完善中，敬请期待！');
-                //theUrl = 'https://itunes.apple.com/cn/app/id1299542018';
+                theUrl = '#';
             } else if (Terminal.platform.iPad) {//iPad端
                 // 还可以通过language，区分开多国语言版
                 switch (Terminal.language) {
@@ -50,7 +50,7 @@
                 }
             }
 
-            //location.href = theUrl;
+            location.href = theUrl;
         }
 
     </script>
